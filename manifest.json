@@ -1,0 +1,28 @@
+{
+  "name": "右键百度搜索",
+  "description": "右键使用百度搜索选中文字",
+  "version": "0.0.1",
+  "permissions": [
+    "http://*/*", "https://*/*",
+    "contextMenus",
+    "tabs",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content_scripts.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "manifest_version": 2,
+  "icons": {
+    "48": "icons/search-96.png",
+    "128": "icons/search-144.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/search-96.png"
+  }
+}
