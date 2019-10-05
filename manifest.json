@@ -1,6 +1,6 @@
 {
-  "name": "右键百度搜索",
-  "description": "右键使用百度搜索选中文字",
+  "name": "右键搜索",
+  "description": "右键使用搜索选中文字",
   "version": "0.0.1",
   "permissions": [
     "http://*/*", "https://*/*",
